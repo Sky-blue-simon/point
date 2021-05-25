@@ -1,0 +1,14 @@
+lecture\PointApplication.class
+lecture\AbstractEvent$1.class
+lecture\config\kafka\KafkaProcessor.class
+lecture\PointRegistered.class
+lecture\PaymentCanceled.class
+lecture\PaymentApproved.class
+lecture\external\GiftService.class
+lecture\AbstractEvent.class
+lecture\PointRepository.class
+lecture\external\Gift.class
+lecture\PointCanceled.class
+lecture\Point.class
+lecture\PointController.class
+lecture\PolicyHandler.class
