@@ -26,6 +26,18 @@
     docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/lecture-point:latest
 
 
+## 컨테이너 만들기
+
+  kubectl create namespace lecture-point
+  
+  kubectl create deploy point --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/lecture-point:latest -n tutorial
+  
+  kubectl expose deploy point --type=ClusterIP --port=8080 -n tutorial (상동, port는 모두 8080으로 띄워줘야함!!)
+  
+  kubectl expose deploy gateway --type=LoadBalancer --port=8080 -n lecture-point ( gateway는 이렇게 해줘야댐 )
+  
+  kubectl get all -n lecture-point
+
 
     
       
