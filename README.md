@@ -19,6 +19,16 @@
       
       docker login --username AWS -p $(aws ecr get-login-password --region ap-northeast-2) 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/
       
+  - AWS 레지스트리에 도커 이미지 푸시하기
+    
+    aws ecr create-repository --repository-name lecture-point --region ap-northeast-2
+    
+    docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/lecture-point:latest
+
+
+
+    
+      
       
 
 
